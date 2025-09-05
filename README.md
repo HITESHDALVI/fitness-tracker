@@ -1,7 +1,7 @@
 /// README.md
-# Fyxlife - Take Home Assignment (Expo + TypeScript)
+# Fitness Tracker
 
-This repository is a minimal Expo React Native app implementing the Fyxlife take-home assignment.
+This repository is a minimal Expo React Native app implementing fitness app assignment.
 
 ## Features included
 - Onboarding flow (3 screens) - collects user profile and stores in AsyncStorage
