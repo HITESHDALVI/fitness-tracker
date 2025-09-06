@@ -72,6 +72,22 @@ Return later → Data persists (profile & goals remembered).
 1. Install Expo CLI if not already: `npm install -g expo-cli`
 2. Clone the repo or copy files.
 3. `npm install` or `yarn`
-4. `expo start` and open in Expo Go or simulator.
+4. `expo start` and open in Expo Go or a simulator using `npm run android` or `npm run ios`.
 
 ---
+
+## Scaling v0 → v1
+
+Replace local state with a backend API (Node.js/Express or Firebase).
+
+Add real activity tracking (via HealthKit/Google Fit integrations).
+
+Implement authentication and personalized plans.
+
+Expand AI features:
+
+AI-suggested goal swaps (e.g., adjust workouts/meals).
+
+Predictive health risks with user inputs + wearable data.
+
+Enhance UI with charts (weekly/monthly trends).
