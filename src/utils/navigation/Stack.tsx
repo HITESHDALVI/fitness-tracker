@@ -1,17 +1,17 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Onboarding1 from "../../screens/Onboarding1/Onboarding1";
-import Onboarding2 from "../../screens/Onboarding2/Onboarding2";
-import Onboarding3 from "../../screens/Onboarding3/Onboarding3";
+import Welcome from "../../screens/Welcome/Welcome";
+import UserInfo from "../../screens/UserInfo/UserInfo";
+import Confirmation from "../../screens/Confirmation/Confirmation";
 import Dashboard from "../../screens/Dashboard/Dashboard";
 import Progress from "../../screens/Progress/Progress";
 import RiskMeter from "../../screens/RiskMeter/RiskMeter";
 
 export type RootStackParamList = {
-  Onboarding1: undefined;
-  Onboarding2: undefined;
-  Onboarding3: undefined;
+  Welcome: undefined;
+  UserInfo: undefined;
+  Confirmation: undefined;
   Dashboard: undefined;
   Progress: undefined;
   RiskMeter: undefined;
@@ -22,20 +22,20 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 export default function AppNavigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Onboarding1">
+      <Stack.Navigator initialRouteName="Welcome">
         <Stack.Screen
-          name="Onboarding1"
-          component={Onboarding1}
+          name="Welcome"
+          component={Welcome}
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="Onboarding2"
-          component={Onboarding2}
+          name="UserInfo"
+          component={UserInfo}
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="Onboarding3"
-          component={Onboarding3}
+          name="Confirmation"
+          component={Confirmation}
           options={{ headerShown: false }}
         />
         <Stack.Screen

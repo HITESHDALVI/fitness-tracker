@@ -13,6 +13,6 @@ export type Goal = {
   id: string;
   title: string;
   description?: string;
-  target: string; // e.g. '20 min'
+  target: string;  
   completedToday: boolean;
 };
