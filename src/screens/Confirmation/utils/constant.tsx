@@ -2,24 +2,33 @@ import { Goal } from "../../../types";
 
 export const defaultGoals: Goal[] = [
   {
-    id: "g1",
+    id: 1,
     title: "Move",
     description: "20 min walk",
     target: "20 min",
     completedToday: false,
+    swap_description: "10 min stretch",
+    og_description: "20 min walk",
+    swapped: false,
   },
   {
-    id: "g2",
+    id: 2,
     title: "Eat",
     description: "Healthy meals",
     target: "3 meals",
     completedToday: false,
+    swap_description: "Morning Breakfast",
+    og_description: "Healthy meals",
+    swapped: false,
   },
   {
-    id: "g3",
+    id: 3,
     title: "Calm",
-    description: "Meditation",
+    description: "10 min meditation",
     target: "10 min",
     completedToday: false,
+    swap_description: "15 min yoga",
+    og_description: "10 min meditation",
+    swapped: false,
   },
 ];
