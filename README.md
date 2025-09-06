@@ -3,6 +3,34 @@
 
 This repository is a minimal Expo React Native app implementing fitness app assignment.
 
+## Screen Overview
+1. Welcome Screen
+2. User Info Screen
+  -> Step-by-step profile setup with progress indicator
+  Form inputs: Name, Age, Phone
+  Radio button groups for Gender and Activity Level
+  Smart validation with fixed bottom button
+3. Confirmation Screen
+4. Dashboard
+  ->Daily greeting with circular progress indicator
+  "X of Y goals completed" summary
+  Quick stats: Current streak, weekly average, next goals
+  Wellness goals in card format: 🏃 Move, 🍽 Eat, 😌 Calm
+  Quick actions grid: Progress, Risk-o-meter
+  Daily motivation section
+5. Goal Cards Component
+  -> Smart auto-assigned wellness icons
+  Visual progress bars and completion badges
+  Goal details: title, description, target
+  Action buttons: "Mark Complete" ↔ "Completed", "Swap"
+6. Progress Screen
+  -> Against Plan Tracking: Today/Week/Month vs targets
+  Quick stats: Total completed, daily average, best streak, success rate
+7. Risk-o-meter Screen
+  ->Overall health risk assessment with color-coded levels
+  Risk categories: Cardio ❤️, Metabolic ⚡, Musculoskeletal 🦴
+  Personalized recommendations and actionable health tips
+
 ## Features Implemented
 1. Onboarding Flow
 
