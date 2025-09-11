@@ -3,6 +3,9 @@
 
 This repository is a minimal Expo React Native app implementing fitness app assignment.
 
+Note: A screen recording of the app has been added to this repository for quick reference.
+video file : appVideo.mov
+
 ## Screen Overview
 1. Welcome Screen
 2. User Info Screen
