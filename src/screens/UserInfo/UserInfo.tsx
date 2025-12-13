@@ -22,6 +22,7 @@ export default function UserInfo({ navigation, route }: any) {
     onNext,
     handleStateChange,
     isFormValid,
+    email,
   } = useUserInfo({
     navigation,
   });
@@ -29,13 +30,12 @@ export default function UserInfo({ navigation, route }: any) {
   return (
     <SafeAreaView style={userInfoStyles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
-        {/* Header Section */}
         <View style={userInfoStyles.header}>
           <View style={userInfoStyles.progressContainer}>
             <View style={userInfoStyles.progressBar}>
               <View style={userInfoStyles.progressFill} />
             </View>
-            {/* <Text style={userInfoStyles.progressText}>Step 1 of 2</Text> */}
+            <Text style={userInfoStyles.progressText}>Step 1 of 2</Text>
           </View>
 
           <Text style={userInfoStyles.title}>Tell us about you</Text>
@@ -44,15 +44,23 @@ export default function UserInfo({ navigation, route }: any) {
           </Text>
         </View>
 
-        {/* Form Content */}
         <View style={userInfoStyles.formContainer}>
-          {/* Basic Information */}
           <View style={userInfoStyles.inputGroup}>
             <Text style={userInfoStyles.inputLabel}>Name</Text>
             <TextInput
               placeholder="Enter your name"
               value={name}
               onChangeText={(value) => handleStateChange("name", value)}
+              style={userInfoStyles.input}
+              placeholderTextColor="#a0a0a0"
+            />
+          </View>
+          <View style={userInfoStyles.inputGroup}>
+            <Text style={userInfoStyles.inputLabel}>Email</Text>
+            <TextInput
+              placeholder="Enter your email"
+              value={email}
+              onChangeText={(value) => handleStateChange("email", value)}
               style={userInfoStyles.input}
               placeholderTextColor="#a0a0a0"
             />

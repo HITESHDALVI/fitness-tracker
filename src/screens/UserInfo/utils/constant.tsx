@@ -4,6 +4,7 @@ export const initialState = {
   phone: "",
   gender: "",
   activityLevel: "moderate",
+  email: "",
 };
 export const genderOptions = [
   { value: "male", label: "Male" },
