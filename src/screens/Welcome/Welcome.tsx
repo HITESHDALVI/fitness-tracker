@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, SafeAreaView, TouchableOpacity } from "react-native";
 import { welcomeStyles } from "./styles/welcomeStyles";
+import UserList from "../User/Userlist";
 
 export default function Welcome({ navigation }: any) {
   const handleSubmit = () => {
@@ -8,7 +9,7 @@ export default function Welcome({ navigation }: any) {
   };
   return (
     <SafeAreaView style={welcomeStyles.containerMinimal}>
-      <View style={welcomeStyles.contentMinimal}>
+      {/* <View style={welcomeStyles.contentMinimal}>
         <View style={welcomeStyles.logoContainer}>
           <View style={welcomeStyles.logoCircle}>
             <Text style={welcomeStyles.logoEmoji}>🌱</Text>
@@ -34,7 +35,8 @@ export default function Welcome({ navigation }: any) {
             <Text style={welcomeStyles.ctaButtonText}>Start Your Journey</Text>
           </TouchableOpacity>
         </View>
-      </View>
+      </View> */}
+      <UserList />
     </SafeAreaView>
   );
 }
