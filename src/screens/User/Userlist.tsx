@@ -6,10 +6,9 @@ import { GET_USERS } from "../../services/queries/queries";
 import UserCard from "./UserCard";
 import { GetUsersResponse, User } from "./types";
 import UsersHeader from "./UsersHeader";
-import { useFocusEffect } from "@react-navigation/native";
 import { DELETE_USER } from "../../services/queries/mutation";
 
-const UserList = ({ navigation }: any) => {
+const UserList = ({ navigation, route }: any) => {
   const getInitials = useCallback((name: string) => {
     return name
       .trim()
@@ -46,12 +45,15 @@ const UserList = ({ navigation }: any) => {
     [deleteUser]
   );
   const handleNavigate = useCallback((id: string) => {
-    navigation.navigate("UserDetails");
+    navigation.navigate("UserInfo", {
+      type: "edit",
+      id: id,
+    });
   }, []);
 
   return (
     <>
-      <UsersHeader navigation={navigation} />
+      <UsersHeader navigation={navigation} route={route} />
       <FlatList
         data={users}
         keyExtractor={(item) => item.id.toString()}

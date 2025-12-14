@@ -25,6 +25,7 @@ export default function UserInfo({ navigation, route }: any) {
     email,
   } = useUserInfo({
     navigation,
+    route,
   });
 
   return (

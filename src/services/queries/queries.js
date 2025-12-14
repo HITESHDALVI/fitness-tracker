@@ -19,10 +19,10 @@ export const GET_USER = gql`
     user(id: $userId) {
       id
       name
-      # age
+      age
       email
-      # phone
-      # gender
+      phone
+      gender
       activity
     }
   }

@@ -11,6 +11,9 @@ export interface User {
 export interface GetUsersResponse {
   users: User[];
 }
+export interface GetUserResponse {
+  user: User;
+}
 
 export interface UserCardProps {
   item: User;

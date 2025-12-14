@@ -40,3 +40,33 @@ export const DELETE_USER = gql`
     }
   }
 `;
+
+export const UPDATE_USER = gql`
+  mutation UpdateUser(
+    $id: ID!
+    $name: String
+    $email: String
+    $age: Int
+    $phone: String
+    $gender: Gender
+    $activity: Activity
+  ) {
+    updateUser(
+      id: $id
+      name: $name
+      email: $email
+      age: $age
+      phone: $phone
+      gender: $gender
+      activity: $activity
+    ) {
+      id
+      name
+      age
+      email
+      phone
+      gender
+      activity
+    }
+  }
+`;

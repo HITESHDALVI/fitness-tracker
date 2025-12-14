@@ -27,7 +27,9 @@ const UsersHeader = ({ navigation }: any) => {
         <TouchableOpacity
           style={userStyles.addButton}
           onPress={() => {
-            navigation.navigate("UserInfo");
+            navigation.navigate("UserInfo", {
+              type: "add",
+            });
           }}
         >
           <Feather name="plus" size={24} color="#ffffff" />
