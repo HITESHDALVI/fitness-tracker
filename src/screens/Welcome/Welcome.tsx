@@ -36,7 +36,7 @@ export default function Welcome({ navigation }: any) {
           </TouchableOpacity>
         </View>
       </View> */}
-      <UserList />
+      <UserList navigation={navigation} />
     </SafeAreaView>
   );
 }

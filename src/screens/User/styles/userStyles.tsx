@@ -4,7 +4,7 @@ export const userStyles = StyleSheet.create({
   container: {
     paddingHorizontal: "4%",
     paddingVertical: "6%",
-    backgroundColor: "rgba(54, 60, 156, 0.8))",
+    backgroundColor: "rgba(59, 70, 228, 0.8))",
   },
 
   headerRow: {

@@ -7,6 +7,8 @@ import Confirmation from "../../screens/Confirmation/Confirmation";
 import Dashboard from "../../screens/Dashboard/Dashboard";
 import Progress from "../../screens/Progress/Progress";
 import RiskMeter from "../../screens/RiskMeter/RiskMeter";
+import UserList from "../../screens/User/Userlist";
+import UserDetails from "../../screens/User/UserDetails";
 
 export type RootStackParamList = {
   Welcome: undefined;
@@ -15,6 +17,8 @@ export type RootStackParamList = {
   Dashboard: undefined;
   Progress: undefined;
   RiskMeter: undefined;
+  UserList: undefined;
+  UserDetails: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -52,6 +56,16 @@ export default function AppNavigator() {
           name="RiskMeter"
           component={RiskMeter}
           options={{ title: "Risk-o-meter" }}
+        />
+        <Stack.Screen
+          name="UserList"
+          component={UserList}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="UserDetails"
+          component={UserDetails}
+          options={{ headerShown: false }}
         />
       </Stack.Navigator>
     </NavigationContainer>

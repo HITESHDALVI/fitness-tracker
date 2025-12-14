@@ -3,12 +3,15 @@ import { StyleSheet, View } from "react-native";
 import AppNavigator from "./src/utils/navigation/Stack";
 import { ApolloProvider } from "@apollo/client/react";
 import { client } from "./src/services/applloClient";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function App() {
   return (
     <ApolloProvider client={client}>
-      <AppNavigator />
-      <StatusBar style="auto" />
+      <GestureHandlerRootView>
+        <AppNavigator />
+        <StatusBar style="auto" />
+      </GestureHandlerRootView>
     </ApolloProvider>
   );
 }

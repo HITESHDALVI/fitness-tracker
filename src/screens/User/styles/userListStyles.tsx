@@ -3,20 +3,18 @@ import { StyleSheet } from "react-native";
 export const userListStyles = StyleSheet.create({
   list: {
     padding: "4%",
-    marginVertical: "2%",
     flexGrow: 1,
+    backgroundColor: "#E4E4E4",
   },
 
   card: {
     backgroundColor: "#ffffff",
-    borderRadius: 8,
-    padding: 16,
-    marginBottom: 12,
-    elevation: 2,
-    shadowColor: "#000",
-    shadowOpacity: 0.05,
-    shadowRadius: 6,
-    shadowOffset: { width: 0, height: 3 },
+    borderRadius: 20,
+    padding: "5%",
+    paddingHorizontal: "4%",
+    // marginVertical: "2%",
+    borderWidth: 0.25,
+    borderColor: "rgba(238, 238, 238, 0.8)",
   },
 
   row: {
@@ -34,8 +32,8 @@ export const userListStyles = StyleSheet.create({
 
   avatarText: {
     color: "#fff",
-    fontSize: 16,
-    fontWeight: "600",
+    fontSize: 24,
+    fontWeight: "400",
   },
 
   info: {
@@ -43,42 +41,43 @@ export const userListStyles = StyleSheet.create({
     marginHorizontal: 12,
   },
 
-  nameRow: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-    marginBottom: 4,
-  },
-
   name: {
     fontSize: 16,
-    fontWeight: "600",
-    color: "#111827",
-    flexShrink: 1,
-  },
-
-  activeDot: {
-    width: 8,
-    height: 8,
-    borderRadius: 4,
-    backgroundColor: "#22c55e",
-  },
-
-  meta: {
-    fontSize: 13,
-    color: "#6b7280",
     marginBottom: 2,
+    color: "rgba(0, 0, 3, 0.8)",
+    fontWeight: "500",
+    letterSpacing: 0.4,
   },
 
   email: {
-    fontSize: 13,
-    color: "#4b5563",
+    fontSize: 14,
+    color: "rgba(79, 80, 83, 0.8)",
+    fontWeight: "400",
+    letterSpacing: 0.25,
   },
 
   moreBtn: {
-    width: 32,
-    height: 32,
+    width: 42,
+    height: 42,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#262AB8",
+    borderRadius: 50,
+  },
+  container: {
+    marginBottom: 12,
+  },
+
+  deleteBg: {
+    position: "absolute",
+    right: 0,
+    top: 0,
+    bottom: 0,
+    width: "100%",
+    backgroundColor: "#ef4444",
+    justifyContent: "center",
+    alignItems: "flex-end",
+    paddingRight: "4%",
+    borderRadius: 20,
   },
 });

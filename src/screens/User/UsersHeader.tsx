@@ -15,7 +15,7 @@ interface Props {
   setSearchQuery: (value: string) => void;
 }
 
-const UsersHeader: React.FC<Props> = () => {
+const UsersHeader = ({ navigation }: any) => {
   return (
     <View style={userStyles.container}>
       <View style={userStyles.headerRow}>
@@ -24,7 +24,12 @@ const UsersHeader: React.FC<Props> = () => {
           <Text style={userStyles.subtitle}>{10} total</Text>
         </View>
 
-        <TouchableOpacity style={userStyles.addButton}>
+        <TouchableOpacity
+          style={userStyles.addButton}
+          onPress={() => {
+            navigation.navigate("UserInfo");
+          }}
+        >
           <Feather name="plus" size={24} color="#ffffff" />
         </TouchableOpacity>
       </View>
